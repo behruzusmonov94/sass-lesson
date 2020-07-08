@@ -1,5 +1,4 @@
 @import "./variables";
-@import "./header";
 *{
     font-family: $font, sans-serif;
 }
@@ -9,4 +8,5 @@ body{
     background-color: $back-color;
 
 }
+@import "./header";
 @import "./footer";

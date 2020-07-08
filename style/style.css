@@ -1,5 +1,26 @@
+* {
+  font-family: "product sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fdfffc;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+}
+
 header {
-  background-color: #a8dadc;
+  background-color: #2ec4b6;
+}
+
+#logo {
+  color: #2ec4b6;
+  background-color: #011627;
 }
 
 nav {
@@ -9,35 +30,28 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 nav a {
   text-decoration: none;
-  color: #1d3557;
+  color: #011627;
   padding: 10px;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
 }
 
-nav a:hover {
-  text-decoration: underline;
-  color: #fff;
-  background-color: #333;
-}
-
-* {
-  font-family: "montserrat", sans-serif;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #f1faee;
+nav a:active {
+  color: #fdfffc;
+  background-color: #011627;
+  border-radius: 20px;
 }
 
 footer {
-  background-color: burlywood;
+  background-color: #e71d36;
   padding: 10px;
+  color: #fdfffc;
 }
 /*# sourceMappingURL=style.css.map */

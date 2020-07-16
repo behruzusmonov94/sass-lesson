@@ -1,0 +1,23 @@
+@mixin flex-b($con, $wrap, $align) {
+    justify-content: $con;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+.row{
+    padding: 10px;
+    margin: 10px;
+    border: solid 1px #666;
+    display: flex;
+    @include flex-b(space-between, wrap, center,);
+    div{
+        height: 100px;
+        width: 100px;
+        background-color: $red;
+        margin: 10px;
+        &:hover{;
+            background-color: $light-blue;
+            outline: solid 2px orangered;
+        }
+    }
+}

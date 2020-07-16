@@ -13,18 +13,42 @@
     }
 }
 
-.btn-large{
+@mixin btnType($type){
+    @if $type == primary {
+        background-color: rgb(29, 96, 173);
+        color: #fff;
+    } 
+    @else if $type == warning{
+        background-color: orangered;
+        color: #fff;
+    }
+    @else if $type == success{
+        background-color: rgb(25, 161, 86);
+        color: #fff;
+    }
+    @else{
+        background-color: #eee;
+        color: #333;
+    }
+}
+.btn-primary{
     @extend .btn;
-    font-size: large;
+    @include btnType(primary);
 }
-.danger{
-    background-color: orangered;
-    color: #fff;
-}
-.primary{
-    background-color: $light-blue;
 
+.btn-warning{
+    @extend .btn;
+    @include btnType(warning);
 }
+.btn-success{
+    @extend .btn;
+    @include btnType(success);
+}
+
+input[type = text]{
+    padding: 20px;
+}
+
 .row{
     padding: 10px;
     margin: 10px;
@@ -40,8 +64,5 @@
             background-color: $light-blue;
             outline: solid 2px orangered;
         }
-    }
-    button{
-        @extend .btn;
     }
 }

@@ -1,0 +1,14 @@
+@each $name, $color, $bg-color, $shadow in 
+(danger, #fff, rgb(219, 23, 23), rgb(189, 31, 31)), 
+(warning, #fff, orange, rgb(219, 147, 12)), 
+(success, #fff, rgb(25, 161, 86), rgb(24, 134, 74)),
+(primary, #fff, rgb(29, 96, 173), rgb(24, 78, 139)){
+    .btn-#{$name}{
+        @extend .btn;
+        background-color: $bg-color;
+        color: $color;
+        &:hover{
+            box-shadow: 0px 0px 0px 3px $shadow;
+        }
+    }
+}

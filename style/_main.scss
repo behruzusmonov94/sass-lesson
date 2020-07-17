@@ -40,24 +40,19 @@
         color: #333;
     }
 }
-.btn-primary{
-    @extend .btn;
-    @include btnType(primary);
-}
+// .btn-primary{
+//     @extend .btn;
+//     @include btnType(primary);
+// }
 
-.btn-warning{
-    @extend .btn;
-    @include btnType(warning);
-}
-.btn-success{
-    @extend .btn;
-    @include btnType(success);
-}
-
-input[type = text]{
-    padding: 20px;
-}
-
+// .btn-warning{
+//     @extend .btn;
+//     @include btnType(warning);
+// }
+// .btn-success{
+//     @extend .btn;
+//     @include btnType(success);
+// }
 .row{
     padding: 10px;
     margin: 10px;

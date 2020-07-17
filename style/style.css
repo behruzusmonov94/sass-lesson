@@ -56,7 +56,6 @@ nav a {
 nav a:active {
   color: #fdfffc;
   background-color: #011627;
-  border-radius: 20px;
 }
 
 .btn, .btn-danger, .btn-warning, .btn-success, .btn-primary {

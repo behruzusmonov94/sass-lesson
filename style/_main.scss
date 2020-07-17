@@ -7,9 +7,10 @@
     padding: 6px 12px;
     border: none;
     border-radius: 4px;   
+    outline: none;
     transition: box-shadow 0.1s ease-out;
     &:hover{
-        box-shadow: 0px 0px 0px 2px #222;
+        box-shadow: 0px 0px 0px 2px #444;
     }
 }
 
@@ -54,19 +55,9 @@
 //     @include btnType(success);
 // }
 .row{
-    padding: 10px;
-    margin: 10px;
-    border: solid 1px #666;
     display: flex;
-    @include flex-b(space-evenly, wrap, center,);
-    div{
-        height: 100px;
-        width: 100px;
-        background-color: $red;
-        margin: 10px;
-        &:hover{
-            background-color: $light-blue;
-            outline: solid 2px orangered;
-        }
-    }
+    @include flex-b(center, wrap, top);
+}
+.top-margin{
+    margin-top: 70px;
 }

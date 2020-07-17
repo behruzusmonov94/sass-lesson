@@ -2,6 +2,47 @@
 @for $i from 1 to 12 {
     .col-#{$i}{
         width: #{100% / 12 *$i};
+        padding: 10px;
+        transition: box-shadow 0.2s ease-out;
+        &:hover{
+            position: relative;
+            box-shadow: 0px 0px 30px 1px #999;
+        }
     }
     
+}
+@each $name, $bg-color, $color in (dark,#333, #eee),(light,#ddd, #333)  {
+    .bg-#{$name}{
+        background-color: $bg-color;
+        color: $color;
+    }
+}
+@media (max-width: 720px){
+    @for $i from 1 to 12 {
+        .col-#{$i}{
+            width: #{100% / 12 *$i};
+            padding: 10px;
+        }
+        
+    }
+}
+@media (max-width: 480px){
+    @for $i from 1 to 12 {
+        .col-#{$i}{
+            width: #{100% / 12 *$i};
+            min-width: 100%;
+            padding: 10px;
+        }
+        
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    header{
+        height: 100px;
+    }
+    .top-margin{
+        margin-top: 100px;
+    }
 }

@@ -1,6 +1,7 @@
-@import "./variables";
+@import "variables";
 *{
     font-family: $font, sans-serif;
+    box-sizing: border-box;
 }
 body{
     margin: 0;
@@ -8,8 +9,8 @@ body{
     background-color: $back-color;
 
 }
-@import "./header";
-@import "./main";
-@import "./footer";
+@import "header";
+@import "main";
+@import "footer";
 @import "grid";
 @import "button";

@@ -53,10 +53,10 @@ nav a:active {
   padding: 6px 12px;
   border: none;
   border-radius: 4px;
-  -webkit-transition: -webkit-box-shadow 0.2s ease-out;
-  transition: -webkit-box-shadow 0.2s ease-out;
-  transition: box-shadow 0.2s ease-out;
-  transition: box-shadow 0.2s ease-out, -webkit-box-shadow 0.2s ease-out;
+  -webkit-transition: -webkit-box-shadow 0.1s ease-out;
+  transition: -webkit-box-shadow 0.1s ease-out;
+  transition: box-shadow 0.1s ease-out;
+  transition: box-shadow 0.1s ease-out, -webkit-box-shadow 0.1s ease-out;
 }
 
 .btn:hover, .btn-primary:hover, .btn-warning:hover, .btn-success:hover {
@@ -69,14 +69,29 @@ nav a:active {
   color: #fff;
 }
 
+.btn-primary:hover {
+  -webkit-box-shadow: 0px 0px 0px 3px #164b88;
+          box-shadow: 0px 0px 0px 3px #164b88;
+}
+
 .btn-warning {
-  background-color: orangered;
+  background-color: #db1717;
   color: #fff;
+}
+
+.btn-warning:hover {
+  -webkit-box-shadow: 0px 0px 0px 3px #bd1f1f;
+          box-shadow: 0px 0px 0px 3px #bd1f1f;
 }
 
 .btn-success {
   background-color: #19a156;
   color: #fff;
+}
+
+.btn-success:hover {
+  -webkit-box-shadow: 0px 0px 0px 3px #137941;
+          box-shadow: 0px 0px 0px 3px #137941;
 }
 
 input[type=text] {
@@ -116,5 +131,49 @@ footer {
   background-color: #e71d36;
   padding: 10px;
   color: #fdfffc;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
 }
 /*# sourceMappingURL=style.css.map */
